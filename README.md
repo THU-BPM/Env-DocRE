@@ -18,7 +18,7 @@ This repository contains the data and code for paper [On the Robustness of Docum
 
 ## Overview
 
-<img src="illustrative_example.png" width="50%" />
+<div align="center"><img src="illustrative_example.png" width="50%" /></div>
 
 In this work, we systematically investigate the robustness of document-level relation extraction (DocRE) models to entity name variations. We first propose a principled pipeline to generate entity-renamed documents by replacing the original entity names with names from Wikidata. By applying the pipeline to DocRED and Re-DocRED datasets, we construct two novel benchmarks named Env-DocRED and Env-Re-DocRED for robustness evaluation. Experimental results show that both three representative DocRE models and two in-context learned large language models consistently lack sufficient robustness to entity name variations, particularly on cross-sentence relation instances and documents with more entities. Finally, we propose an entity variation robust training method which not only improves the robustness of DocRE models but also enhances their understanding and reasoning capabilities. We further verify that the basic idea of this method can be effectively transferred to in-context learning for DocRE as well.
 
