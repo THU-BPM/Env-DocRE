@@ -72,9 +72,9 @@ sh scripts/run_env-docred_bert.sh <device_id> <log_file_name>
 # like sh scripts/run_env-docred_bert.sh 0 env-docred_bert
 ```
 
-You can also comment the `--evrt` argument to switch to the original model without entity variance robust training. Note that since the evaluation on DocRED's test set is conducted via submission to [Codalab](https://codalab.lisn.upsaclay.fr/competitions/365), when evaluating on Env-DocRED's test set, the generated prediction results need to be split into five parts (details in `split_result.py`) for separate submission, and the final score is the average of five submissions.
+You can also comment the `--evrt` argument to switch to the original model without entity variation robust training. Note that since the evaluation on DocRED's test set is conducted via submission to [Codalab](https://codalab.lisn.upsaclay.fr/competitions/365), when evaluating on Env-DocRED's test set, the generated prediction results need to be split into five parts (details in `split_result.py`) for separate submission, and the final score is the average of five submissions.
 
-We also provide the scripts for running the experiments of in-context learning. For example, you can use the following command to generate the prediction results of `gpt-3.5-turbo-0125` model with and without entity variance robust in-context learning on `Env-Re-DocRED` benchmark:
+We also provide the scripts for running the experiments of in-context learning. For example, you can use the following command to generate the prediction results of `gpt-3.5-turbo-0125` model with and without entity variation robust in-context learning on `Env-Re-DocRED` benchmark:
 
 ```bash
 sh scripts/run_env-re-docred_gpt-3.5.sh <openai_api_key>
