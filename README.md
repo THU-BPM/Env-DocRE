@@ -1,6 +1,6 @@
 # Env-DocRE: On the Robustness of DocRE Models to Entity Name Variations
 
-This repository contains the data and code for paper [On the Robustness of Document-Level Relation Extraction Models to Entity Name Variations](https://arxiv.org/abs/2406.07444).
+This repository contains the data and code for paper [On the Robustness of Document-Level Relation Extraction Models to Entity Name Variations](https://aclanthology.org/2024.findings-acl.969/).
 
 ## Quick Links
 
@@ -22,7 +22,7 @@ This repository contains the data and code for paper [On the Robustness of Docum
 
 In this work, we systematically investigate the robustness of document-level relation extraction (DocRE) models to entity name variations. We first propose a principled pipeline to generate entity-renamed documents by replacing the original entity names with names from Wikidata. By applying the pipeline to DocRED and Re-DocRED datasets, we construct two novel benchmarks named Env-DocRED and Env-Re-DocRED for robustness evaluation. Experimental results show that both three representative DocRE models and two in-context learned large language models consistently lack sufficient robustness to entity name variations, particularly on cross-sentence relation instances and documents with more entities. Finally, we propose an entity variation robust training method which not only improves the robustness of DocRE models but also enhances their understanding and reasoning capabilities. We further verify that the basic idea of this method can be effectively transferred to in-context learning for DocRE as well.
 
-You can find more details of this work in our [paper](https://arxiv.org/abs/2406.07444).
+You can find more details of this work in our [paper](https://aclanthology.org/2024.findings-acl.969/).
 
 ## Setup
 
@@ -87,13 +87,19 @@ Then you can use `icl/evaluation.py` to evaluate the prediction results.
 Please kindly cite our paper if you use the data or code of Env-DocRE in your work:
 
 ```bibtex
-@misc{meng2024robustness,
-      title={On the Robustness of Document-Level Relation Extraction Models to Entity Name Variations}, 
-      author={Shiao Meng and Xuming Hu and Aiwei Liu and Fukun Ma and Yawen Yang and Shuang Li and Lijie Wen},
-      year={2024},
-      eprint={2406.07444},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{meng-etal-2024-robustness,
+    title = "On the Robustness of Document-Level Relation Extraction Models to Entity Name Variations",
+    author = "Meng, Shiao  and
+      Hu, Xuming  and
+      Liu, Aiwei  and
+      Ma, Fukun  and
+      Yang, Yawen  and
+      Li, Shuang  and
+      Wen, Lijie",
+    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
+    year = "2024",
+    url = "https://aclanthology.org/2024.findings-acl.969",
+    pages = "16362--16374"
 }
 ```
 
